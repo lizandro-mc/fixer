@@ -9,6 +9,7 @@ config-version: 2
 vars:
     fivetran_sources_schema: nectarvet_prod_tpvc_tpvc
     raw_sources_schema: tpvc_migration
+    postgres_fixer_schema: fixer_tpvc
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'fixer'

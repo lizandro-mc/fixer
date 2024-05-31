@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+
+- name: postgres
+  database: local_postgres_db # Change for your local setup
+  schema: "{{ var('postgres_fixer_schema', 'postgres_fixer') }}" 
+  tables:  
+    - name: inventory_items
+      identifier: inventory_items
+    - name: prescriptions
+      identifier: rx_scripts
