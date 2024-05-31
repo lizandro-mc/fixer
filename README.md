@@ -30,4 +30,4 @@
   - Confirm the number of rows and IDs before deleting old models.
 
 ### Note
-- TODO: Explo
+- TODO: Explore the possibility of moving data directly from Snowflake, eliminating the need for Postgres in all processes. Check Snowpipe capabilities in Snowflake.
