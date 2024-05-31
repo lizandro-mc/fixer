@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+
+- name: fivetran
+  database: pc_fivetran_db
+  schema: "{{ var('fivetran_sources_schema', 'nectarvet_prod_clinic') }}" 
+  tables:  
+    - name: inventory_items
+      identifier: inventory_items
+    - name: prescriptions
+      identifier: rx_scripts

@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+
+- name: raw
+  database: dbt_dev_db
+  schema: "{{ var('raw_sources_schema', 'clinic_migration') }}" 
+  tables:  
+    - name: inventory_items
+      identifier: inventory_items
+    - name: prescriptions
+      identifier: rx_scripts
